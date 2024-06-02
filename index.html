@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Microbiology Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> <!-- Link to your custom stylesheet -->
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">Food Microbiology Dashboard</h1>
+    <p class="text-center">Explore the microbial aspects of food preservation and packaging.</p>
+    
+    <ul class="nav nav-tabs" id="microbeTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="gram-positive-tab" data-toggle="tab" href="#gram-positive" role="tab">Gram-Positive Bacteria</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="gram-negative-tab" data-toggle="tab" href="#gram-negative" role="tab">Gram-Negative Bacteria</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="yeasts-tab" data-toggle="tab" href="#yeasts" role="tab">Yeasts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="molds-tab" data-toggle="tab" href="#molds" role="tab">Molds</a>
+        </li>
+    </ul>
+    
+    <div class="tab-content" id="microbeTabsContent">
+        <!-- Gram-Positive Bacteria -->
+        <div class="tab-pane fade show active" id="gram-positive" role="tabpanel">
+            <h3 class="mt-4">Gram-Positive Bacteria</h3>
+            <div class="card">
+                <div class="card-header" id="headingLactic">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseLactic" aria-expanded="true" aria-controls="collapseLactic">
+                            Lactic Acid Bacteria (LAB)
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseLactic" class="collapse" aria-labelledby="headingLactic">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming, Gram-positive</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic</li>
+                            <li><strong>Toxin Production:</strong> Generally do not produce toxins</li>
+                            <li><strong>Examples:</strong> <i>Lactobacillus</i>, <i>Pediococcus</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingMicrococci">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseMicrococci" aria-expanded="false" aria-controls="collapseMicrococci">
+                            Micrococci
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseMicrococci" class="collapse" aria-labelledby="headingMicrococci">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming, Gram-positive</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic</li>
+                            <li><strong>Toxin Production:</strong> Do not produce toxins</li>
+                            <li><strong>Examples:</strong> <i>Micrococcus luteus</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingListeria">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseListeria" aria-expanded="false" aria-controls="collapseListeria">
+                            Listeria monocytogenes
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseListeria" class="collapse" aria-labelledby="headingListeria">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming, Gram-positive</li>
+                            <li><strong>Temperature Range:</strong> Psychrotrophic</li>
+                            <li><strong>Toxin Production:</strong> Produces listeriolysin O</li>
+                            <li><strong>Examples:</strong> <i>Listeria monocytogenes</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingBacillus">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseBacillus" aria-expanded="false" aria-controls="collapseBacillus">
+                            Bacillus spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseBacillus" class="collapse" aria-labelledby="headingBacillus">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Spore forming, Gram-positive</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic to thermophilic</li>
+                            <li><strong>Toxin Production:</strong> Some species produce toxins</li>
+                            <li><strong>Examples:</strong> <i>Bacillus cereus</i> (emetic and diarrheal toxins), <i>Bacillus subtilis</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingClostridium">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseClostridium" aria-expanded="false" aria-controls="collapseClostridium">
+                            Clostridium spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseClostridium" class="collapse" aria-labelledby="headingClostridium">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Spore forming, Gram-positive</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic to thermophilic</li>
+                            <li><strong>Toxin Production:</strong> Produces potent toxins</li>
+                            <li><strong>Examples:</strong> <i>Clostridium botulinum</i> (botulinum toxin), <i>Clostridium perfringens</i> (enterotoxin)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gram-Negative Bacteria -->
+        <div class="tab-pane fade" id="gram-negative" role="tabpanel">
+            <h3 class="mt-4">Gram-Negative Bacteria</h3>
+            <div class="card">
+                <div class="card-header" id="headingPseudomonas">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePseudomonas" aria-expanded="true" aria-controls="collapsePseudomonas">
+                            Pseudomonas spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapsePseudomonas" class="collapse" aria-labelledby="headingPseudomonas">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming, Gram-negative</li>
+                            <li><strong>Temperature Range:</strong> Psychrotrophic</li>
+                            <li><strong>Toxin Production:</strong> Generally do not produce toxins in foods</li>
+                            <li><strong>Examples:</strong> <i>Pseudomonas fluorescens</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingEnterobacteriaceae">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEnterobacteriaceae" aria-expanded="false" aria-controls="collapseEnterobacteriaceae">
+                            Enterobacteriaceae
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseEnterobacteriaceae" class="collapse" aria-labelledby="headingEnterobacteriaceae">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming, Gram-negative</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic</li>
+                            <li><strong>Toxin Production:</strong> Some produce toxins</li>
+                            <li><strong>Examples:</strong> <i>Escherichia coli</i> (Shiga toxin), <i>Salmonella</i> spp., <i>Shigella</i> spp.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingVibrio">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseVibrio" aria-expanded="false" aria-controls="collapseVibrio">
+                            Vibrio spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseVibrio" class="collapse" aria-labelledby="headingVibrio">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming, Gram-negative</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic</li>
+                            <li><strong>Toxin Production:</strong> Produces toxins</li>
+                            <li><strong>Examples:</strong> <i>Vibrio cholerae</i> (cholera toxin), <i>Vibrio parahaemolyticus</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingCampylobacter">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseCampylobacter" aria-expanded="false" aria-controls="collapseCampylobacter">
+                            Campylobacter spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseCampylobacter" class="collapse" aria-labelledby="headingCampylobacter">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming, Gram-negative</li>
+                            <li><strong>Temperature Range:</strong> Thermophilic</li>
+                            <li><strong>Toxin Production:</strong> Produces cytolethal distending toxin (CDT)</li>
+                            <li><strong>Examples:</strong> <i>Campylobacter jejuni</i>, <i>Campylobacter coli</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingShewanella">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseShewanella" aria-expanded="false" aria-controls="collapseShewanella">
+                            Shewanella spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseShewanella" class="collapse" aria-labelledby="headingShewanella">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming, Gram-negative</li>
+                            <li><strong>Temperature Range:</strong> Psychrotrophic</li>
+                            <li><strong>Toxin Production:</strong> Do not produce toxins</li>
+                            <li><strong>Examples:</strong> <i>Shewanella putrefaciens</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Yeasts -->
+        <div class="tab-pane fade" id="yeasts" role="tabpanel">
+            <h3 class="mt-4">Yeasts</h3>
+            <div class="card">
+                <div class="card-header" id="headingSaccharomyces">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSaccharomyces" aria-expanded="true" aria-controls="collapseSaccharomyces">
+                            Saccharomyces spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSaccharomyces" class="collapse" aria-labelledby="headingSaccharomyces">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic</li>
+                            <li><strong>Toxin Production:</strong> Do not produce toxins</li>
+                            <li><strong>Examples:</strong> <i>Saccharomyces cerevisiae</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingCandida">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseCandida" aria-expanded="false" aria-controls="collapseCandida">
+                            Candida spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseCandida" class="collapse" aria-labelledby="headingCandida">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Non-spore forming</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic</li>
+                            <li><strong>Toxin Production:</strong> Do not produce toxins</li>
+                            <li><strong>Examples:</strong> <i>Candida albicans</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Molds -->
+        <div class="tab-pane fade" id="molds" role="tabpanel">
+            <h3 class="mt-4">Molds</h3>
+            <div class="card">
+                <div class="card-header" id="headingPenicillium">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePenicillium" aria-expanded="true" aria-controls="collapsePenicillium">
+                            Penicillium spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapsePenicillium" class="collapse" aria-labelledby="headingPenicillium">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Spore forming</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic to psychrotrophic</li>
+                            <li><strong>Toxin Production:</strong> Some species produce mycotoxins</li>
+                            <li><strong>Examples:</strong> <i>Penicillium chrysogenum</i> (cheese production), <i>Penicillium expansum</i> (spoilage)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingAspergillus">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseAspergillus" aria-expanded="false" aria-controls="collapseAspergillus">
+                            Aspergillus spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseAspergillus" class="collapse" aria-labelledby="headingAspergillus">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Spore forming</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic to thermophilic</li>
+                            <li><strong>Toxin Production:</strong> Produces mycotoxins</li>
+                            <li><strong>Examples:</strong> <i>Aspergillus flavus</i> (aflatoxins)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFusarium">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFusarium" aria-expanded="false" aria-controls="collapseFusarium">
+                            Fusarium spp.
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFusarium" class="collapse" aria-labelledby="headingFusarium">
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Characteristics:</strong> Spore forming</li>
+                            <li><strong>Temperature Range:</strong> Mesophilic</li>
+                            <li><strong>Toxin Production:</strong> Produces mycotoxins</li>
+                            <li><strong>Examples:</strong> <i>Fusarium graminearum</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
